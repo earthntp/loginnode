@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="/login" method="post">
+        <fieldset>
+            <div align="center">
+                <legend>Login</legend>
+                <br>
+                ⠀⠀⠀User: <input type="text" id="user" name="user"><br>
+                <br>
+                Password: <input type="password" id="password" name="password"><br>
+                <br>
+                <button style="display: inline-block;" type="submit">เข้าสู่ระบบ</button>
+                <button style="display: inline-block;" type="submit">ยกเลิก</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        if ('<%= error %>' === 'ไม่ถูก') {
+            alert('ไม่พบข้อมูลผู้ใช้งาน')
+        }
+    </script>
+</body>
+
+</html>
